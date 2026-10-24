@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "document-evidence-lab"
+version = "0.1.0"
+description = "A reproducible document retrieval and evidence evaluation workbench"
+requires-python = ">=3.11"
+dependencies = ["PyMuPDF==1.26.7", "python-dotenv>=1,<2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+workspace = ["numpy>=2.1,<3", "tiktoken>=0.8,<1"]
+ocr = ["rapidocr>=3,<4", "onnxruntime==1.20.1", "opencv-python-headless>=4.10,<5"]
+notebook = ["nbformat>=5,<6", "nbclient>=0.10,<1", "ipykernel>=6,<8", "jupyterlab>=4,<5", "nbconvert>=7,<8", "python-dotenv>=1,<2"]
+retrieval = ["fastembed==0.7.4", "flashrank==0.2.10", "onnxruntime==1.20.1", "numpy>=2.1,<3"]
+
+[tool.setuptools.packages.find]
+include = ["evidence_lab*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
