@@ -65,7 +65,7 @@ def test_demo_search_page_and_path_guards(tmp_path, monkeypatch):
     try:
         port = server.server_port
         status, headers, body = request(port, "/")
-        assert status == 200 and b"Document Evidence Lab" in body
+        assert status == 200 and b"TraceDoc" in body
         assert b"innerHTML" not in body  # result text is inserted through textContent
         assert headers["X-Content-Type-Options"] == "nosniff"
         status, _, body = request(port, "/api/docs")

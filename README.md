@@ -1,4 +1,4 @@
-# Document Evidence Lab
+# TraceDoc
 
 A Python workspace for searching documents, asking questions with cited sources, and inspecting the original evidence.
 

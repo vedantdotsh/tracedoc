@@ -62,7 +62,7 @@ def render_page(tables, params, reviews=()):
     sample_conditions = sorted({json.dumps(fact.get("conditions", {}), sort_keys=True) for fact in facts})
     return f'''<!doctype html><html lang="en"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Document Evidence Lab — exact lookup</title>
+<title>TraceDoc — exact lookup</title>
 <style>
 body{{font:17px/1.6 system-ui,sans-serif;color:#17233b;background:#f5f7fc;margin:0}}
 main{{max-width:1050px;margin:30px auto;padding:30px;background:white;border-radius:16px}}

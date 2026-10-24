@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "document-evidence-lab"
+name = "tracedoc"
 version = "0.1.0"
 description = "A reproducible document retrieval and evidence evaluation workbench"
 requires-python = ">=3.11"

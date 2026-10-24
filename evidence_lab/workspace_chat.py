@@ -11,7 +11,7 @@ HTML = '''<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Document Evidence Lab</title>
+<title>TraceDoc</title>
 <style>
 :root{--bg:#f7f4ee;--surface:#fffdfa;--ink:#1d2327;--muted:#5f625d;--line:#e3dccf;--field:#cfc6b6;--teal:#0e6b68;--teal-dk:#0a514f;--teal-bg:#e7f1ef;--warn:#7a4d00;--warn-bg:#f8eed8;--err:#9b2c2c}
 *{box-sizing:border-box}
@@ -74,7 +74,7 @@ figcaption{margin-top:6px;color:var(--muted);font-size:.8rem}
 </head>
 <body>
 <header class="top">
-<h1>Document Evidence Lab</h1>
+<h1>TraceDoc</h1>
 <p class="lib" id="lib">Loading documents…</p>
 </header>
 <main class="layout">
