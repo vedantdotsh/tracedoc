@@ -13,10 +13,14 @@ docs/cookbook-html/
 output/
 *.log
 
-reports/
+reports/*
+!reports/corpus-audit-v1/
+!reports/corpus-audit-ocr-v1/
+!reports/corpus-audit-openai-v1/
 notebooks/
 docs/*
 !docs/WORKSPACE.md
+!docs/EVALUATION.md
 scripts/build_*.py
 scripts/export_cookbook.py
 scripts/make_comparison_notebooks.py

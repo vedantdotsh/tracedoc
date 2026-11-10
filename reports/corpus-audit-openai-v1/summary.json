@@ -1,0 +1,327 @@
+{
+  "created_utc": "2026-10-23T09:22:14.643598+00:00",
+  "index_variant": "ocr",
+  "evaluation": "offline retrieval of annotated evidence pages; no generated answers graded",
+  "source_revision": "d73f0dc0be7e0a2ff6a403d5fe65fcd96461f384",
+  "eligible_sha256": "fdfe6d679f27957e921afafad2fe46e5b38b931f1594ed6f18527a22285fd331",
+  "index_metadata": {
+    "words": "180",
+    "overlap": "30",
+    "page_base": "1",
+    "pymupdf": "1.26.7",
+    "tokenizer": "fts5 unicode61",
+    "sources_sha256": "0f821e0729bbfbc6cb0193c7cc75b28c6808ef2b26f9f289d87b079e3ca3c9c9",
+    "ocr_settings_sha256": "f0d470267388a080f38b0fdff80997d71fc5c007e2405bb1d05fe6b444d22d25"
+  },
+  "dense_manifest": {
+    "model": "openai/text-embedding-3-small",
+    "dimensions": 1536,
+    "source_db_sha256": "840dbb36f6570b585ad1204563a5207c9379d2fc14209d8cd588b33755d696fe",
+    "source_chunks_sha256": "602aebe7b0778474c9a5998b11515fec372dfa1e05533b4b9ecd94d0834797a5",
+    "eligible_sha256": "fdfe6d679f27957e921afafad2fe46e5b38b931f1594ed6f18527a22285fd331",
+    "chunks": 14756,
+    "positive_questions": 837,
+    "unique_texts": 15236,
+    "total_estimated_tokens": 3019478,
+    "max_input_tokens": 976,
+    "budget_usd": 0.1,
+    "reserved_usd": 0.06038956
+  },
+  "pdf_files": 135,
+  "indexed_documents": 135,
+  "pdf_pages": 6529,
+  "indexed_pages_with_text": 6510,
+  "pages_without_indexed_text": 19,
+  "raw_questions": 1082,
+  "structurally_eligible_questions": 1052,
+  "quarantined_questions": 30,
+  "quarantine_reasons": {
+    "answer_without_page_evidence": 12,
+    "negative_with_page_evidence_outside_baseline_contract": 7,
+    "incompatible_physical_page_coordinates": 9,
+    "conflicting_duplicate": 2
+  },
+  "positive_questions": 837,
+  "no_gold_questions": 215,
+  "positive_evidence_pages": 1566,
+  "positive_questions_with_no_text_gold_page": 3,
+  "positive_evidence_pages_without_indexed_text": 5,
+  "positive_gold_text_coverage": {
+    "all": 834,
+    "some": 2,
+    "none": 1
+  },
+  "visual_figure_or_chart_positive_questions": 459,
+  "table_positive_questions": 212,
+  "evidence_source_positive_question_counts": {
+    "Chart": 176,
+    "Figure": 288,
+    "Generalized-text (Layout)": 116,
+    "Pure-text (Plain-text)": 293,
+    "Table": 212
+  },
+  "overlapping_modality_breakdown": {
+    "Chart": {
+      "positive_questions": 176,
+      "document": {
+        "bm25": {
+          "positive_questions": 176,
+          "mean_page_recall_at_5": 0.7293779137529138,
+          "hit_at_5": 0.8352272727272727,
+          "mrr_at_5": 0.6862689393939394
+        },
+        "dense": {
+          "positive_questions": 176,
+          "mean_page_recall_at_5": 0.7160932817182817,
+          "hit_at_5": 0.8238636363636364,
+          "mrr_at_5": 0.6648674242424243
+        },
+        "hybrid": {
+          "positive_questions": 176,
+          "mean_page_recall_at_5": 0.7448946886446887,
+          "hit_at_5": 0.8522727272727273,
+          "mrr_at_5": 0.6901515151515152
+        }
+      },
+      "global": {
+        "bm25": {
+          "positive_questions": 176,
+          "mean_page_recall_at_5": 0.6305059523809523,
+          "hit_at_5": 0.7159090909090909,
+          "mrr_at_5": 0.6062500000000001
+        },
+        "dense": {
+          "positive_questions": 176,
+          "mean_page_recall_at_5": 0.6427083333333333,
+          "hit_at_5": 0.7102272727272727,
+          "mrr_at_5": 0.5732954545454546
+        },
+        "hybrid": {
+          "positive_questions": 176,
+          "mean_page_recall_at_5": 0.664258658008658,
+          "hit_at_5": 0.7443181818181818,
+          "mrr_at_5": 0.6106060606060606
+        }
+      }
+    },
+    "Figure": {
+      "positive_questions": 288,
+      "document": {
+        "bm25": {
+          "positive_questions": 288,
+          "mean_page_recall_at_5": 0.5839299492945327,
+          "hit_at_5": 0.7048611111111112,
+          "mrr_at_5": 0.5248842592592592
+        },
+        "dense": {
+          "positive_questions": 288,
+          "mean_page_recall_at_5": 0.5827339616402116,
+          "hit_at_5": 0.6805555555555556,
+          "mrr_at_5": 0.4755208333333333
+        },
+        "hybrid": {
+          "positive_questions": 288,
+          "mean_page_recall_at_5": 0.6134341931216931,
+          "hit_at_5": 0.7048611111111112,
+          "mrr_at_5": 0.5211805555555555
+        }
+      },
+      "global": {
+        "bm25": {
+          "positive_questions": 288,
+          "mean_page_recall_at_5": 0.38814070767195763,
+          "hit_at_5": 0.4583333333333333,
+          "mrr_at_5": 0.3548611111111111
+        },
+        "dense": {
+          "positive_questions": 288,
+          "mean_page_recall_at_5": 0.38753306878306876,
+          "hit_at_5": 0.4409722222222222,
+          "mrr_at_5": 0.3292824074074074
+        },
+        "hybrid": {
+          "positive_questions": 288,
+          "mean_page_recall_at_5": 0.43938492063492063,
+          "hit_at_5": 0.5,
+          "mrr_at_5": 0.3670717592592593
+        }
+      }
+    },
+    "Generalized-text (Layout)": {
+      "positive_questions": 116,
+      "document": {
+        "bm25": {
+          "positive_questions": 116,
+          "mean_page_recall_at_5": 0.6383536482674413,
+          "hit_at_5": 0.7931034482758621,
+          "mrr_at_5": 0.5929597701149425
+        },
+        "dense": {
+          "positive_questions": 116,
+          "mean_page_recall_at_5": 0.5141941391941391,
+          "hit_at_5": 0.6551724137931034,
+          "mrr_at_5": 0.5274425287356321
+        },
+        "hybrid": {
+          "positive_questions": 116,
+          "mean_page_recall_at_5": 0.6369773904256664,
+          "hit_at_5": 0.75,
+          "mrr_at_5": 0.5550287356321839
+        }
+      },
+      "global": {
+        "bm25": {
+          "positive_questions": 116,
+          "mean_page_recall_at_5": 0.37085385878489324,
+          "hit_at_5": 0.46551724137931033,
+          "mrr_at_5": 0.359051724137931
+        },
+        "dense": {
+          "positive_questions": 116,
+          "mean_page_recall_at_5": 0.3530890804597701,
+          "hit_at_5": 0.4051724137931034,
+          "mrr_at_5": 0.3448275862068966
+        },
+        "hybrid": {
+          "positive_questions": 116,
+          "mean_page_recall_at_5": 0.40561371100164206,
+          "hit_at_5": 0.49137931034482757,
+          "mrr_at_5": 0.3521551724137931
+        }
+      }
+    },
+    "Pure-text (Plain-text)": {
+      "positive_questions": 293,
+      "document": {
+        "bm25": {
+          "positive_questions": 293,
+          "mean_page_recall_at_5": 0.6561189663578741,
+          "hit_at_5": 0.7781569965870307,
+          "mrr_at_5": 0.6167235494880545
+        },
+        "dense": {
+          "positive_questions": 293,
+          "mean_page_recall_at_5": 0.6433122054282464,
+          "hit_at_5": 0.7610921501706485,
+          "mrr_at_5": 0.5773606370875995
+        },
+        "hybrid": {
+          "positive_questions": 293,
+          "mean_page_recall_at_5": 0.6559158134243459,
+          "hit_at_5": 0.7747440273037542,
+          "mrr_at_5": 0.6270762229806598
+        }
+      },
+      "global": {
+        "bm25": {
+          "positive_questions": 293,
+          "mean_page_recall_at_5": 0.48199252397204617,
+          "hit_at_5": 0.5597269624573379,
+          "mrr_at_5": 0.4662684869169511
+        },
+        "dense": {
+          "positive_questions": 293,
+          "mean_page_recall_at_5": 0.4586380627336259,
+          "hit_at_5": 0.5426621160409556,
+          "mrr_at_5": 0.43953356086461887
+        },
+        "hybrid": {
+          "positive_questions": 293,
+          "mean_page_recall_at_5": 0.513302454087437,
+          "hit_at_5": 0.5938566552901023,
+          "mrr_at_5": 0.4865187713310581
+        }
+      }
+    },
+    "Table": {
+      "positive_questions": 212,
+      "document": {
+        "bm25": {
+          "positive_questions": 212,
+          "mean_page_recall_at_5": 0.6436649042781118,
+          "hit_at_5": 0.7547169811320755,
+          "mrr_at_5": 0.599685534591195
+        },
+        "dense": {
+          "positive_questions": 212,
+          "mean_page_recall_at_5": 0.6915604050038012,
+          "hit_at_5": 0.8113207547169812,
+          "mrr_at_5": 0.6411163522012578
+        },
+        "hybrid": {
+          "positive_questions": 212,
+          "mean_page_recall_at_5": 0.6797679521736126,
+          "hit_at_5": 0.7877358490566038,
+          "mrr_at_5": 0.6579402515723269
+        }
+      },
+      "global": {
+        "bm25": {
+          "positive_questions": 212,
+          "mean_page_recall_at_5": 0.5098270440251572,
+          "hit_at_5": 0.589622641509434,
+          "mrr_at_5": 0.4872641509433962
+        },
+        "dense": {
+          "positive_questions": 212,
+          "mean_page_recall_at_5": 0.582940251572327,
+          "hit_at_5": 0.6933962264150944,
+          "mrr_at_5": 0.5433962264150943
+        },
+        "hybrid": {
+          "positive_questions": 212,
+          "mean_page_recall_at_5": 0.6214622641509434,
+          "hit_at_5": 0.7169811320754716,
+          "mrr_at_5": 0.572562893081761
+        }
+      }
+    }
+  },
+  "retrieval": {
+    "document_bm25": {
+      "positive_questions": 837,
+      "mean_page_recall_at_5": 0.6395394695573907,
+      "hit_at_5": 0.7491039426523297,
+      "mrr_at_5": 0.5825567502986858
+    },
+    "document_dense": {
+      "positive_questions": 837,
+      "mean_page_recall_at_5": 0.6403301298462588,
+      "hit_at_5": 0.7443249701314217,
+      "mrr_at_5": 0.5689565909996017
+    },
+    "document_hybrid": {
+      "positive_questions": 837,
+      "mean_page_recall_at_5": 0.6605938267228589,
+      "hit_at_5": 0.7598566308243727,
+      "mrr_at_5": 0.6013341298287534
+    },
+    "global_bm25": {
+      "positive_questions": 837,
+      "mean_page_recall_at_5": 0.4772614780679297,
+      "hit_at_5": 0.5471923536439666,
+      "mrr_at_5": 0.4481481481481482
+    },
+    "global_dense": {
+      "positive_questions": 837,
+      "mean_page_recall_at_5": 0.49288843374864877,
+      "hit_at_5": 0.5627240143369175,
+      "mrr_at_5": 0.44705296694544006
+    },
+    "global_hybrid": {
+      "positive_questions": 837,
+      "mean_page_recall_at_5": 0.5367867099049894,
+      "hit_at_5": 0.6093189964157706,
+      "mrr_at_5": 0.47813620071684587
+    }
+  },
+  "definitions": {
+    "positive_denominator": "Structurally eligible questions with one or more physical gold evidence pages (837 expected).",
+    "scope": "document searches only the provided doc_id; global searches all 135 PDFs without the doc_id filter. Global hits count only when both doc_id and page match gold.",
+    "page_recall": "Fraction of each question's gold pages in top five distinct retrieved pages, then macro averaged across positive questions.",
+    "hit": "Fraction of positive questions with at least one gold page in top five.",
+    "mrr": "Reciprocal rank of first gold page in top five, averaged across positive questions.",
+    "no_gold": "Unanswerable questions have no positive retrieval target and are excluded from recall, hit and MRR; abstention needs a separate evaluation.",
+    "unsupported_modality": "Figure/Chart and Table counts describe annotation sources, not verified extractability or answer accuracy. The text index has no image understanding or table reasoning."
+  }
+}
